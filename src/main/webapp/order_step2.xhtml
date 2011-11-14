@@ -1,0 +1,14 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets" template="template.xhtml">
+
+
+    <ui:define name="content">
+        <h:form>
+            Do you really need #{basket.total} worth of Duct Tape?
+
+            <h:commandButton value="YES, GIMME!" action="#{basket.checkout}"/>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
